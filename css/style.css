@@ -1,0 +1,268 @@
+@font-face {
+    font-display: swap; 
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/fraunces-v30-latin-regular.woff2') format('woff2'), 
+         url('../fonts/fraunces-v30-latin-regular.woff') format('woff'); 
+  }
+
+  @font-face {
+    font-display: swap; 
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/fraunces-v30-latin-900.woff2') format('woff2'), 
+         url('../fonts/fraunces-v30-latin-900.woff') format('woff'); 
+  }
+
+@font-face {
+    font-display: swap; 
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/barlow-v12-latin-regular.woff2') format('woff2'), 
+         url('../fonts/barlow-v12-latin-regular.woff') format('woff'); 
+  }
+
+  @font-face {
+    font-display: swap; 
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/barlow-v12-latin-500.woff2') format('woff2'), 
+         url('../fonts/barlow-v12-latin-500.woff') format('woff'); 
+  }
+
+  @font-face {
+    font-display: swap; 
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/barlow-v12-latin-600.woff2') format('woff2'), 
+         url('../fonts/barlow-v12-latin-600.woff') format('woff'); 
+  }
+
+  @font-face {
+    font-display: swap; 
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/barlow-v12-latin-700.woff2') format('woff2'), 
+         url('../fonts/barlow-v12-latin-700.woff') format('woff'); 
+  }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*:focus {
+    outline: 2px dotted #0E8784;
+    outline-offset: 3px;
+}
+
+html {
+    font-size: 62.5%; /* 10px */
+    height: 100%;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: flex;
+    height: auto;
+}
+
+body {
+    font-family: "Barlow", Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.625;
+    color: rgba(51, 61, 75, 0.8);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+h1, h2, h3, h4 {
+    color: rgba(51, 61, 75, 1);
+    font-family: "Fraunces", cursive;
+    margin: 0;
+    font-weight: 900;
+}
+
+h1 {
+    font-size: 7.2rem;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 4rem;
+    line-height: 1.2;
+}
+
+h3 {
+    font-size: 3.2rem;
+    line-height: 1.125;
+}
+
+h4 {
+    font-size: 2.4rem;
+    line-height: 1.3;
+}
+
+.button {
+    font-family: "Fraunces", cursive;
+    font-size: 1.8rem;
+    line-height: 1.39;   
+    color:#FEFCF7;
+    padding: 1.5rem 7.55rem 1.6rem;
+    font-weight: 900;
+    border-radius: 6px;
+    background-color:#0E8784;
+}
+
+
+
+.button:hover {
+    background-color:#66D2CF
+}
+
+.button.disabeled {
+    background-color:#E2DEDB;
+}
+
+.container {
+    width: 100%;
+    max-width: 1380px;
+    margin: 0 auto;
+    padding: 0 5rem;
+}
+
+/* HEADER */
+.header {
+    padding-top: 4.4rem;
+    padding-bottom: 4.4rem;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-logo {
+}
+
+.sitenav {
+}
+
+.sitenav-list {
+    display: flex;
+    align-items:center;
+}
+
+.sitenav-item:not(:last-child) {
+    margin-right: 3.3rem;
+}
+.sitenav-link {
+    text-transform: uppercase;
+    color:#83888F;
+    font-family: "Barlow", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.92px;
+    font-size: 1.2rem;
+    line-height: 1.25;
+}
+
+.sitenav-link:hover {
+    color:#333D4B;
+}
+
+
+/* MAIN */
+
+.main {
+    flex-grow: 1;
+}
+
+
+.hero {
+    padding-bottom: 9.6rem;
+}
+
+.hero-container {
+}
+
+.hero-inner-wrapper {
+    background-image: url('../images/png/hero-bg.png');
+    background-position: top 69% left 0;
+    padding-left: 8.5rem;
+    padding-top: 11.7rem;
+    padding-bottom: 11.7rem;
+    border-radius: 10px;
+}
+
+.hero-info-wrapper {
+    max-width: 493px;
+}
+
+.hero-title {
+    color:#FEFCF7;
+    margin-bottom: 3.2rem;
+}
+
+.hero-description {
+    margin-bottom: 5.6rem;
+}
+
+.hero-description-wrapper {
+    max-width: 435px;
+}
+
+.hero-button {
+    padding-right: 3.1rem;
+    padding-left: 3.1rem;
+}
+
+.collection {
+    padding-bottom: 5rem;
+    text-align: center;
+}
+.collection-container {
+}
+
+.collection-inner-wrapper {
+    width: 100%;
+    max-width: 1111px;
+    margin: 0 auto;
+}
+.collection-list {
+    padding-top: 12.6rem;
+    background-image: url('../images/svg/out-collection-bg.svg');
+    background-repeat: no-repeat;
+    background-position: center top 0;
+    display: flex;
+}
+.collection-item {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.collection-item-image {
+    margin-bottom: 7.2rem;
+}
+.collection-item-title {
+    margin-bottom: 2.4rem;
+
+}
+.collection-item-description {
+    color: #333D4B;
+}
